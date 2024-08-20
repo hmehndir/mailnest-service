@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 const corsOptions = {
-    origin:'http://localhost:5173',
+    origin:'https://66c4985196c5a31c6441003d--nimble-dasik-9db384.netlify.app/',
     credentials:true
 }
 app.use(cors(corsOptions));
