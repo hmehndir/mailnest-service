@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 const corsOptions = {
-    origin:'https://hmail.netlify.app/',
+    origin:'https://hmail.netlify.app',
     credentials:true
 }
 app.use(cors(corsOptions));
