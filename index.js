@@ -26,6 +26,8 @@ app.use(cors(corsOptions));
 app.use("/api/v1/user", userRoute);
 app.use("/api/v1/email", emailRoute);
 
+app.set("trust proxy", 1);
+
 app.listen(PORT, ()=>{
     console.log(`Server running at port ${PORT}`);
 });
