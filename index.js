@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 const corsOptions = {
-    origin:'*'
+    origin:'https://mailnest-ui.vercel.app'
 }
 app.use(cors(corsOptions));
 
