@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 const corsOptions = {
-    origin:'https://hmail.netlify.app',
+    origin:'https://mailnest-ui.vercel.app/',
     credentials:true
 }
 app.use(cors(corsOptions));
