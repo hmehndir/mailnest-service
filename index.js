@@ -17,10 +17,10 @@ app.use(express.json());
 app.use(cookieParser());
 
 const corsOptions = {
-    origin: '*', // allow all origins
-    credentials: false // credentials must be false when using '*'
-  };
-  app.use(cors(corsOptions));
+    origin:'https://mailnest-ui.vercel.app',
+    credentials:true
+}
+app.use(cors(corsOptions));
 
 // routes
 app.use("/api/v1/user", userRoute);
